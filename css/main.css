@@ -1,3 +1,21 @@
+.about .feature {
+  padding: 100px 0;
+  background: url("../image/1920x1080.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+}
+.about .feature h3 {
+  font-size: 18px;
+}
+.about .feature i {
+  color: #d6b161;
+}
+.about .feature p {
+  color: #fff;
+}
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -17,7 +35,7 @@ img {
   display: block;
 }
 p {
-  color: #808080;
+  color: #777;
   line-height: 30px;
 }
 .container {
@@ -25,9 +43,12 @@ p {
   margin: 0 auto;
   width: 1170px;
 }
+.container.full-width {
+  width: 100%;
+}
 .button {
-  background: #ffffff;
-  color: #222222;
+  background: #fff;
+  color: #333;
   display: inline-block;
   font-size: 14px;
   margin-top: 30px;
@@ -38,7 +59,9 @@ p {
 .button.bordered {
   border: 1px solid #000000;
 }
-.clearfix:after {
+/*自動清除 float 放在 容器 內*/
+.clearfix:after,
+.row:after {
   clear: both;
   content: "";
   display: table;
@@ -46,15 +69,20 @@ p {
 .row {
   margin: 0 -10px;
 }
-.col-4 {
+.col-12,
+.col-4,
+.col-6 {
   float: left;
-  padding: 0 10px;
+  padding: 0 30px;
+}
+.col-4 {
   width: 33.33%;
 }
 .col-6 {
-  float: left;
-  padding: 0 10px;
   width: 50%;
+}
+.col-12 {
+  width: 100%;
 }
 #logo {
   float: left;
@@ -68,13 +96,55 @@ nav li {
   line-height: 100px;
 }
 nav a {
-  color: #333333;
+  color: #333;
   padding: 0 12px;
   text-decoration: none;
 }
 .boundary:after {
   content: "|";
   padding: 0 12px;
+}
+.progress-bar {
+  width: 100%;
+  background: #eee;
+  margin-bottom: 50px;
+}
+.progress-bar > div {
+  display: inline-block;
+}
+.progress-bar .progress {
+  padding-left: 12px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 2;
+}
+.progress-bar .progress.no-1 {
+  width: 80%;
+}
+.progress-bar .pin {
+  position: relative;
+  -webkit-transform: translate(-50%, -120%);
+  -ms-transform: translate(-50%, -120%);
+  transform: translate(-50%, -120%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 15px;
+}
+.progress-bar .pin:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: rgba(0, 0, 0, 0.6);
+  border-width: 2px;
+  margin-left: -2px;
 }
 #content > div {
   padding-top: 100px;
@@ -83,15 +153,62 @@ nav a {
   padding-top: 0;
 }
 #content > hr {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #eee;
   margin: 0;
+}
+#content h3.title {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+#content div.header {
+  padding: 200px 0;
+  background: url("../image/1920x1080.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+#content div.header .title {
+  float: left;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+#content div.header #breadcrumbs {
+  float: right;
+  padding: 15px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+#content div.header #breadcrumbs li {
+  float: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+#content div.header #breadcrumbs li:after {
+  content: "/";
+  margin: 0 5px;
+}
+#content div.header #breadcrumbs li:last-child:after {
+  content: "";
+  margin: 0;
+}
+#content div.header #breadcrumbs a {
+  color: #777;
+  text-decoration: none;
 }
 .intro {
   margin-bottom: 100px;
   text-align: center;
 }
 .intro h2 {
-  color: #333333;
+  color: #333;
   font-weight: normal;
   letter-spacing: 2px;
   margin: 0;
@@ -106,13 +223,14 @@ nav a {
   width: 60px;
 }
 .intro p {
-  color: #808080;
+  color: #777;
 }
 .slider img {
   height: auto;
   width: 100%;
 }
 .category {
+  padding: 0 10px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -130,13 +248,16 @@ nav a {
   top: 35%;
 }
 .category .title.dark {
-  color: #222222;
+  color: #333;
 }
 .category .title.light {
-  color: #ffffff;
+  color: #fff;
 }
 .products li {
   float: left;
+}
+.product {
+  padding: 0 10px;
 }
 .product .info {
   padding: 15px 0;
@@ -146,7 +267,7 @@ nav a {
   margin: 0;
 }
 .product .title a {
-  color: #222222;
+  color: #333;
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 1px;
@@ -154,7 +275,7 @@ nav a {
   text-transform: uppercase;
 }
 .product .price {
-  color: #808080;
+  color: #777;
   font-size: 12px;
   line-height: 30px;
   list-style-position: 1px;
@@ -184,7 +305,7 @@ nav a {
   opacity: 1;
 }
 .thumbnail .cover a {
-  color: #333333;
+  color: #333;
   margin: auto;
   text-decoration: none;
 }
@@ -197,7 +318,7 @@ nav a {
   padding-bottom: 150px;
 }
 .event .title {
-  color: #ffffff;
+  color: #fff;
   font-size: 72px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -206,7 +327,7 @@ nav a {
   text-transform: uppercase;
 }
 .event .subtitle {
-  color: #ffffff;
+  color: #fff;
   font-size: 24px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -216,9 +337,6 @@ nav a {
 }
 .featured {
   padding-bottom: 100px;
-}
-.featured .col-6 {
-  padding: 0 30px;
 }
 .featured img {
   height: auto;
@@ -255,11 +373,11 @@ nav a {
   text-transform: uppercase;
 }
 .outlet .info {
-  color: #808080;
+  color: #777;
   line-height: 30px;
 }
 .outlet .info a {
-  color: #808080;
+  color: #777;
   text-decoration: none;
 }
 .outlet .map a {
@@ -268,13 +386,13 @@ nav a {
   text-transform: uppercase;
 }
 footer {
-  background: #eeeeee;
+  background: #eee;
   padding: 80px 0;
   position: relative;
 }
 footer .logo {
-  background: #ffffff;
-  border: 5px solid #eeeeee;
+  background: #fff;
+  border: 5px solid #eee;
   left: 50%;
   padding: 20px;
   position: absolute;
@@ -284,7 +402,7 @@ footer .logo {
   transform: translateX(-50%);
 }
 footer .copyright {
-  color: #222222;
+  color: #333;
   float: left;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -301,8 +419,8 @@ footer .social-media li {
 }
 footer .social-media a {
   border-radius: 20px;
-  border: 1px solid #222222;
-  color: #222222;
+  border: 1px solid #333;
+  color: #333;
   display: inline-block;
   height: 40px;
   line-height: 40px;
@@ -314,7 +432,7 @@ footer .social-media a {
 #go-top {
   background: rgba(0, 0, 0, 0.6);
   bottom: 35px;
-  color: #ffffff;
+  color: #fff;
   height: 40px;
   line-height: 40px;
   position: fixed;
