@@ -1,6 +1,55 @@
 @import "basic.less";
 
 .about {
+  .header {
+    padding: 200px 0;
+    background: url("../image/1920x1080.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    .title {
+      float: left;
+      margin: 0;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: normal;
+      letter-spacing: 2px;
+      font-size: 24px;
+    }
+
+    .breadcrumbs {
+      float: right;
+      padding: 15px;
+      font-size: 12px;
+      background: rgba(0, 0, 0, .6);
+      border-radius: 5px;
+
+      li {
+        float: left;
+        color: #fff;
+        text-transform: uppercase;
+
+        &:after {
+          content: "/";
+          margin: 0 5px;
+        }
+
+        &:last-child {
+          &:after {
+            content: "";
+            margin: 0;
+          }
+        }
+      }
+
+      a {
+        color: @gray-text;
+        text-decoration: none;
+      }
+    }
+    // #breadcrumbs
+  }
   .feature {
     padding: 100px 0;
     background: url("../image/1920x1080.jpg");

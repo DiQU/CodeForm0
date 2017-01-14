@@ -1,3 +1,43 @@
+.about .header {
+  padding: 200px 0;
+  background: url("../image/1920x1080.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.about .header .title {
+  float: left;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+.about .header .breadcrumbs {
+  float: right;
+  padding: 15px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+.about .header .breadcrumbs li {
+  float: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+.about .header .breadcrumbs li:after {
+  content: "/";
+  margin: 0 5px;
+}
+.about .header .breadcrumbs li:last-child:after {
+  content: "";
+  margin: 0;
+}
+.about .header .breadcrumbs a {
+  color: #777;
+  text-decoration: none;
+}
 .about .feature {
   padding: 100px 0;
   background: url("../image/1920x1080.jpg");
@@ -60,8 +100,7 @@ p {
   border: 1px solid #000000;
 }
 /*自動清除 float 放在 容器 內*/
-.clearfix:after,
-.row:after {
+.clearfix:after {
   clear: both;
   content: "";
   display: table;
@@ -146,62 +185,22 @@ nav a {
   border-width: 2px;
   margin-left: -2px;
 }
-#content > div {
+main > div {
   padding-top: 100px;
 }
-#content > div:first-child {
+main > div:first-child {
   padding-top: 0;
 }
-#content > hr {
+main > hr {
   border-top: 1px solid #eee;
   margin: 0;
 }
-#content h3.title {
+main h3.title {
   margin-top: 0;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 24px;
   letter-spacing: 1px;
-}
-#content div.header {
-  padding: 200px 0;
-  background: url("../image/1920x1080.jpg");
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-}
-#content div.header .title {
-  float: left;
-  margin: 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: normal;
-  letter-spacing: 2px;
-  font-size: 24px;
-}
-#content div.header #breadcrumbs {
-  float: right;
-  padding: 15px;
-  font-size: 12px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-}
-#content div.header #breadcrumbs li {
-  float: left;
-  color: #fff;
-  text-transform: uppercase;
-}
-#content div.header #breadcrumbs li:after {
-  content: "/";
-  margin: 0 5px;
-}
-#content div.header #breadcrumbs li:last-child:after {
-  content: "";
-  margin: 0;
-}
-#content div.header #breadcrumbs a {
-  color: #777;
-  text-decoration: none;
 }
 .intro {
   margin-bottom: 100px;
@@ -221,9 +220,6 @@ nav a {
   height: 2px;
   margin: 0 auto;
   width: 60px;
-}
-.intro p {
-  color: #777;
 }
 .slider img {
   height: auto;
@@ -253,8 +249,11 @@ nav a {
 .category .title.light {
   color: #fff;
 }
-.products li {
-  float: left;
+.recent-product {
+  padding-bottom: 100px;
+}
+.justify {
+  margin: 0 20px;
 }
 .product {
   padding: 0 10px;
@@ -387,7 +386,7 @@ nav a {
 }
 footer {
   background: #eee;
-  padding: 80px 0;
+  padding: 100px 0;
   position: relative;
 }
 footer .logo {
@@ -424,7 +423,7 @@ footer .social-media a {
   display: inline-block;
   height: 40px;
   line-height: 40px;
-  margin: 20px;
+  margin: 0 20px;
   text-align: center;
   text-decoration: none;
   width: 40px;

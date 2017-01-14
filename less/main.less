@@ -40,8 +40,8 @@ p {
 }
 
 .button {
-  background: @color0;
-  color: @color5;
+  background: #fff;
+  color: #333;
   display: inline-block;
   font-size: 14px;
   margin-top: 30px;
@@ -54,8 +54,7 @@ p {
   border: 1px solid #000000;
 }
 /*自動清除 float 放在 容器 內*/
-.clearfix,
-.row {
+.clearfix {
   &:after {
     clear: both;
     content: "";
@@ -101,7 +100,7 @@ nav {
   }
 
   a {
-    color: @color5;
+    color: #333;
     padding: 0 12px;
     text-decoration: none;
   }
@@ -161,7 +160,7 @@ nav {
 }
 /////////////////////// content ///////////////////////
 
-#content {
+main {
   > div {
     padding-top: 100px;
 
@@ -171,7 +170,7 @@ nav {
   }
 
   > hr {
-    border-top: 1px solid @color4;
+    border-top: 1px solid #eee;
     margin: 0;
   }
 
@@ -182,56 +181,6 @@ nav {
     font-size: 24px;
     letter-spacing: 1px;
   }
-
-  div.header {
-    padding: 200px 0;
-    background: url("../image/1920x1080.jpg");
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-
-    .title {
-      float: left;
-      margin: 0;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: normal;
-      letter-spacing: 2px;
-      font-size: 24px;
-    }
-
-    #breadcrumbs {
-      float: right;
-      padding: 15px;
-      font-size: 12px;
-      background: rgba(0, 0, 0, .6);
-      border-radius: 5px;
-
-      li {
-        float: left;
-        color: #fff;
-        text-transform: uppercase;
-
-        &:after {
-          content: "/";
-          margin: 0 5px;
-        }
-
-        &:last-child {
-          &:after {
-            content: "";
-            margin: 0;
-          }
-        }
-      }
-
-      a {
-        color: @gray-text;
-        text-decoration: none;
-      }
-    }
-    // #breadcrumbs
-  }
 }
 
 .intro {
@@ -239,7 +188,7 @@ nav {
   text-align: center;
 
   h2 {
-    color: @color5;
+    color: #333;
     font-weight: normal;
     letter-spacing: 2px;
     margin: 0;
@@ -255,15 +204,13 @@ nav {
     width: 60px;
   }
 
-  p {
-    color: @gray-text;
-  }
+  &.big {}
 }
 
 .slider {
   img {
     height: auto;
-    width: @width2;
+    width: 100%;
   }
 }
 
@@ -274,7 +221,7 @@ nav {
 
   img {
     height: auto;
-    width: @width2;
+    width: 100%;
   }
 
   .title {
@@ -287,7 +234,7 @@ nav {
     top: 35%;
 
     &.dark {
-      color: @color5;
+      color: #333;
     }
 
     &.light {
@@ -296,10 +243,12 @@ nav {
   }
 }
 
-.products {
-  li {
-    float: left;
-  }
+.recent-product {
+  padding-bottom: 100px;
+}
+
+.justify {
+  margin: 0 20px;
 }
 
 .product {
@@ -314,7 +263,7 @@ nav {
     margin: 0;
 
     a {
-      color: @color5;
+      color: #333;
       font-size: 14px;
       font-weight: normal;
       letter-spacing: 1px;
@@ -336,7 +285,7 @@ nav {
 
   img {
     height: auto;
-    width: @width2;
+    width: 100%;
   }
 
   .cover {
@@ -349,14 +298,14 @@ nav {
     position: absolute;
     top: 0;
     transition: all 0.3s;
-    width: @width2;
+    width: 100%;
 
     &:hover {
       opacity: 1;
     }
 
     a {
-      color: @color5;
+      color: #333;
       margin: auto;
       text-decoration: none;
     }
@@ -372,7 +321,7 @@ nav {
   padding-bottom: 150px;
 
   .title {
-    color: @color0;
+    color: #fff;
     font-size: 72px;
     font-weight: 100;
     letter-spacing: 2px;
@@ -382,7 +331,7 @@ nav {
   }
 
   .subtitle {
-    color: @color0;
+    color: #fff;
     font-size: 24px;
     font-weight: 100;
     letter-spacing: 2px;
@@ -397,7 +346,7 @@ nav {
 
   img {
     height: auto;
-    width: @width2;
+    width: 100%;
   }
 
   .info {
@@ -460,13 +409,13 @@ nav {
 /////////////////////// footer ///////////////////////
 
 footer {
-  background: @color4;
-  padding: 80px 0;
+  background: #eee;
+  padding: 100px 0;
   position: relative;
 
   .logo {
-    background: @color0;
-    border: 5px solid @color4;
+    background: #fff;
+    border: 5px solid #eee;
     left: 50%;
     padding: 20px;
     position: absolute;
@@ -475,7 +424,7 @@ footer {
   }
 
   .copyright {
-    color: @color5;
+    color: #333;
     float: left;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -495,15 +444,15 @@ footer {
 
     a {
       border-radius: 20px;
-      border: 1px solid @color5;
-      color: @color5;
+      border: 1px solid #333;
+      color: #333;
       display: inline-block;
-      height: @height0;
-      line-height: @height0;
-      margin: 20px;
+      height: 40px;
+      line-height: 40px;
+      margin: 0 20px;
       text-align: center;
       text-decoration: none;
-      width: @width4;
+      width: 40px;
     }
   }
 }
@@ -511,12 +460,12 @@ footer {
 #go-top {
   background: rgba(0, 0, 0, 0.6);
   bottom: 35px;
-  color: @color0;
-  height: @height0;
-  line-height: @height0;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
   position: fixed;
   right: 20px;
   text-align: center;
   text-decoration: none;
-  width: @width4;
+  width: 40px;
 }
