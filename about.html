@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>about</title>
+  <title>About</title>
   <link rel="stylesheet" href="./css/fontello.css">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body class="about">
+<body>
   <header id="header">
-    <div class="full-width container clearfix">
+    <div class="container full-width clearfix">
       <div id="logo">
         <img src="http://lorempixel.com/112/100/" alt="Massive">
       </div>
@@ -34,17 +34,18 @@
   </header>
 
   <main>
-    <section class="header">
+<!-- banner -->
+    <section id="about-banner" class="bg-img banner">
       <div class="container">
 
         <div class="clearfix">
           <div class="col-12">
-            <h1 class="title">about us</h1>
+            <h1 class="banner-title">about us</h1>
             <div class="breadcrumbs">
               <ul class="clearfix">
-                <li><a href="#">home</a></li>
-                <li><a href="#">pages</a></li>
-                <li>about us</li>
+                <li><a href="#" class="link">home</a></li>
+                <li><a href="#" class="link">pages</a></li>
+                <li class="location">about us</li>
               </ul>
             </div>
           </div>
@@ -52,37 +53,39 @@
 
       </div>
     </section>
-    <section>
+<!-- welcome to massive -->
+    <section class="full-padding">
       <div class="container">
         <div class="clearfix">
           <div class="col-6">
             <img src="http://lorempixel.com/g/510/404/" alt="photo">
           </div>
-          <div class="col-6">
-            <h3>welcome to massive</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sequi asperiores quae voluptas assumenda, quaerat, dolorum expedita odio impedit labore id! Debitis, voluptatum natus qui possimus veritatis tempora recusandae voluptas nostrum, voluptatibus
-              id aspernatur harum. Fuga, aut, nobis! Recusandae dignissimos officiis suscipit quia totam voluptas?
+          <div class="col-6 post">
+            <h3 class="post-title">welcome to massive</h3>
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ducimus officia nostrum amet, necessitatibus animi dicta veritatis quo placeat ea. Dignissimos porro aperiam veritatis quasi nesciunt perferendis, facere temporibus corporis molestiae doloribus iste sed quo. Incidunt, repudiandae. Inventore iure nostrum, odit rerum nam deleniti non, eveniet placeat temporibus, officia repudiandae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sequi asperiores quae voluptas assumenda, quaerat, dolorum expedita odio impedit labore id! Debitis, voluptatum natus qui possimus veritatis tempora recusandae voluptas nostrum, voluptatibus
+              id aspernt quia totam voluptas?
             </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab provident, cupiditate iure laboriosam sint nulla debitis non rem quae.
+            <p class="desc">
+              ipsum it adipisicing elit. Sed ab provident, cupiditate iure laboriosam sint nulla debitis non rem quae.
             </p>
           </div>
         </div>
       </div>
     </section>
+<!-- who we are -->
     <section class="full-padding">
       <div class="container">
-        <div class="clearfix">
-          <div class="col-6">
-            <h3>who we are </h3>
-            <p>
+        <div class="clearfix l-fx">
+          <div class="col-6 post">
+            <h3 class="post-title">who we are </h3>
+            <p class="desc">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sequi asperiores quae voluptas assumenda, quaerat, dolorum expedita odio impedit labore id! Debitis, voluptatum natus qui possimus veritatis tempora recusandae voluptas nostrum, voluptatibus
               id aspernatur harum. Fuga, aut, nobis! Recusandae dignissimos officiis suscipit quia totam voluptas?
             </p>
           </div>
           <div class="col-6">
-            <h3>massive skills</h3>
+            <h3 class="post-title">massive skills</h3>
             <div class="progress-bar">
               <div class="progress no-1">html/ css/ jquery</div>
               <div class="pin">80%</div>
@@ -103,130 +106,142 @@
         </div>
       </div>
     </section>
-    <section class="feature">
+<!-- feature -->
+    <section id="feature" class="bg-img fixed">
       <div class="container">
         <div class="clearfix">
           <div class="col-4">
-            <i class="icon-light-bulb-on"></i>
-            <h3>creative design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorem, labore consectetur obcaecati voluptates sint.</p>
+            <div class="feature-item">
+              <div class="feature-item-icon"><i class="icon-light-bulb-on"></i></div>
+              <h3 class="feature-item-title">creative design</h3>
+              <p class="feature-item-desc">45 45666um dolor sit amet, consectetur adipisicing elit. Tenetur dolorem, sdfs12 23kl45 labocaecati voluptates sint.</p>
+            </div>
           </div>
           <div class="col-4">
-            <i class="icon-laptop"></i>
-            <h3>creative design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorem, labore consectetur obcaecati voluptates sint.</p>
+            <div class="feature-item">
+              <div class="feature-item-icon"><i class="icon-window"></i></div>
+              <h3 class="feature-item-title">creative design</h3>
+              <p class="feature-item-desc">45 45666um dolor sit amet, consectetur adipisicing elit. Tenetur dolorem, sdfs12 23kl45 labocaecati voluptates sint.</p>
+            </div>
           </div>
           <div class="col-4">
-            <i class="icon-window"></i>
-            <h3>creative design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorem, labore consectetur obcaecati voluptates sint.</p>
+            <div class="feature-item">
+              <div class="feature-item-icon"><i class="icon-laptop-1"></i></div>
+              <h3 class="feature-item-title">creative design</h3>
+              <p class="feature-item-desc">45 45666um dolor sit amet, consectetur adipisicing elit. Tenetur dolorem, sdfs12 23kl45 labocaecati voluptates sint.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="team-member">
+<!-- we have fabulous team -->
+    <section id="team-member" class="full-padding">
       <div class="container">
-        <div class="intro big">
-          <h2> we have a fabulous team </h2>
-          <p>Lorem ipsum dolor sit amet.</p>
+        <div class="intro">
+          <h2 class="intro-title mb0"> we have a fabulous team </h2>
+          <p class="desc">Lorem ipsum dolor sit amet.</p>
         </div>
-        <div class="members">
-          <ul class="clearfix">
-            <li class="col-4 member">
-              <div class="thumbnail">
-                <img src="http://lorempixel.com/330/330/" alt="member">
-                <div class="cover">
-                  <h3>i love to design</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <div class="social-media">
-                    <ul class="clearfix">
-                      <li><a href="#"><i class="icon-facebook"></i></a></li>
-                      <li><a href="#"><i class="icon-twitter"></i></a></li>
-                      <li><a href="#"><i class="icon-gplus"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
+
+        <ul class="clearfix">
+          <li class="col-4 member">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/330/330/" alt="member">
+              <div class="thumbnail-cover">
+                <h3 class="post-title is-gray">i love to design</h3>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <ul class="clearfix social-media">
+                  <li><a href="#" class="social-media-icon no-border"><i class="icon-twitter"></i></a></li>
+                  <li><a href="#" class="social-media-icon no-border"><i class="icon-facebook"></i></a></li>
+                  <li><a href="#" class="social-media-icon no-border"><i class="icon-gplus"></i></a></li>
+                </ul>
               </div>
-              <div class="info big">
-                <h3 class="name">martin smith</h3>
-                <div class="title">founder &amp; ceo</div>
+            </div>
+            <div class="info-group">
+              <h4 class="post-name">martin smith</h4>
+              <div class="desc">founder &amp; ceo</div>
+            </div>
+          </li>
+          <li class="col-4 member">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/330/330/" alt="member">
+              <div class="thumbnail-cover">
+                <h3 class="post-title is-gray">i love to design</h3>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <ul class="clearfix social-media">
+                  <li><a href="#" class="social-media-icon no-border"><i class="icon-twitter"></i></a></li>
+                  <li><a href="#" class="social-media-icon no-border"><i class="icon-facebook"></i></a></li>
+                  <li><a href="#" class="social-media-icon no-border"><i class="icon-gplus"></i></a></li>
+                </ul>
               </div>
-            </li>
-            <li class="col-4 member">
-              <div class="thumbnail">
-                <img src="http://lorempixel.com/330/330/" alt="member">
-                <div class="cover">
-                  <h3>i love to design</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <div class="social-media">
-                    <ul class="clearfix">
-                      <li><a href="#"><i class="icon-facebook"></i></a></li>
-                      <li><a href="#"><i class="icon-twitter"></i></a></li>
-                      <li><a href="#"><i class="icon-gplus"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
+            </div>
+            <div class="info-group">
+              <h4 class="post-name">martin smith</h4>
+              <div class="desc">founder &amp; ceo</div>
+            </div>
+          </li>
+          <li class="col-4 member">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/330/330/" alt="member">
+              <div class="thumbnail-cover">
+                <h3 class="post-title is-gray">i love to design</h3>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <ul class="clearfix social-media">
+                  <li><a href="#" class="social-media-icon no-border"><i class="icon-twitter"></i></a></li>
+                  <li><a href="#" class="social-media-icon no-border"><i class="icon-facebook"></i></a></li>
+                  <li><a href="#" class="social-media-icon no-border"><i class="icon-gplus"></i></a></li>
+                </ul>
               </div>
-              <div class="info big">
-                <h3 class="name">martin smith</h3>
-                <div class="title">founder &amp; ceo</div>
-              </div>
-            </li>
-            <li class="col-4 member">
-              <div class="thumbnail">
-                <img src="http://lorempixel.com/330/330/" alt="member">
-                <div class="cover">
-                  <h3>i love to design</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <div class="social-media">
-                    <ul class="clearfix">
-                      <li><a href="#"><i class="icon-facebook"></i></a></li>
-                      <li><a href="#"><i class="icon-twitter"></i></a></li>
-                      <li><a href="#"><i class="icon-gplus"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info big">
-                <h3 class="name">martin smith</h3>
-                <div class="title">founder &amp; ceo</div>
-              </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+            <div class="info-group">
+              <h4 class="post-name">martin smith</h4>
+              <div class="desc">founder &amp; ceo</div>
+            </div>
+          </li>
+        </ul>
+
     </section>
-    <section class="gray-bg">
+<!-- 36 -->
+    <section class="bg-light full-padding">
       <div class="container">
 
-        <div class="clearfix">
+        <div class="clearfix is-center">
           <div class="col-3">
-            <i class="icon-layer"></i>
-            <div class="count">36</div>
-            <h4>html mutlipage</h4>
+            <div class="count">
+              <i class="icon-layer"></i>
+              <div>36</div>
+              <span>html mutlipage</span>
+            </div>
           </div>
           <div class="col-3">
-            <i class="icon-laptop-1"></i>
-            <div class="count">36</div>
-            <h4>html mutlipage</h4>
+            <div class="count">
+              <i class="icon-database"></i>
+              <div>36</div>
+              <span>html mutlipage</span>
+            </div>
           </div>
           <div class="col-3">
-            <i class="icon-database"></i>
-            <div class="count">36</div>
-            <h4>html mutlipage</h4>
+            <div class="count">
+              <i class="icon-laptop-1"></i>
+              <div>36</div>
+              <span>html mutlipage</span>
+            </div>
           </div>
           <div class="col-3">
-            <i class="icon-line-graph"></i>
-            <div class="count">36</div>
-            <h4>html mutlipage</h4>
+            <div class="count">
+              <i class="icon-line-graph"></i>
+              <div>36</div>
+              <span>html mutlipage</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="clients">
+<!-- our happy clients -->
+    <section id="clients" class="full-padding">
       <div class="container">
-        <div class="intro big">
-          <h2>our happy clients</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima provident eveniet asperiores ducimus. Voluptatum, temporibus.</p>
+        <div class="intro">
+          <h2 class="intro-title mb0">our happy clients</h3>
+          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima provident eveniet asperiores ducimus. Voluptatum, temporibus.</p>
         </div>
         <div class="clearfix">
           <div class="col-2">
@@ -248,93 +263,94 @@
             <img src="http://lorempixel.com/g/145/111/" alt="logo">
           </div>
         </div>
-
       </div>
     </section>
   </main>
 
-  <footer class="dark">
+  <footer>
 
-    <section class="footer-info ">
+    <section class="footer-dark">
       <div class="container">
 
         <div class="clearfix">
           <div class="col-3">
-            <img src="http://lorempixel.com/g/112/100/" alt="massive">
-            <p>
+            <div class="img-init mb20">
+              <img src="https://dummyimage.com/112x100/333/777" alt="massive">
+            </div>
+            <p class="desc">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia repellendus porro quia facere sunt dolorem.
             </p>
           </div>
-          <div class="col-3 comment-list">
-            <h4>recent posts</h4>
-            <ul>
-              <li><a href="#">standard blog post</a></li>
-              <li><a href="#">quotation post</a></li>
-              <li><a href="#">audio post</a></li>
-              <li><a href="#">massive vedio demo</a></li>
-              <li><a href="#">blog image post</a></li>
+          <div class="col-3">
+            <h4 class="post-title is-light">recent posts</h4>
+            <ul class="comment-list">
+              <li><a href="#" class="comment-list-link">standard blog post</a></li>
+              <li><a href="#" class="comment-list-link">quotation post</a></li>
+              <li><a href="#" class="comment-list-link">audio post</a></li>
+              <li><a href="#" class="comment-list-link">massive vedio demo</a></li>
+              <li><a href="#" class="comment-list-link">blog image post</a></li>
             </ul>
 
           </div>
-          <div class="col-3 comment-list">
-            <h4>quick link</h4>
-            <ul>
-              <li><a href="#">about massive</a></li>
-              <li><a href="#">career</a></li>
-              <li><a href="#">terms &amp; condition</a></li>
-              <li><a href="#">privacy policy</a></li>
-              <li><a href="#">contact us</a></li>
+          <div class="col-3">
+            <h4 class="post-title is-light">quick link</h4>
+            <ul class="comment-list">
+              <li><a href="#" class="comment-list-link">about massive</a></li>
+              <li><a href="#" class="comment-list-link">career</a></li>
+              <li><a href="#" class="comment-list-link">terms &amp; condition</a></li>
+              <li><a href="#" class="comment-list-link">privacy policy</a></li>
+              <li><a href="#" class="comment-list-link">contact us</a></li>
             </ul>
           </div>
           <div class="col-3">
-            <h4>recent work</h4>
-            <div class="pic-list">
-              <ul class="clearfix">
+            <h4 class="post-title is-light">recent work</h4>
+
+              <ul class="clearfix pic-list">
                 <li>
-                  <a href="#"><img src="http://lorempixel.com/g/55/55/" alt="work"></a>
+                  <a href="#" class="pic-list-link"><img src="http://lorempixel.com/55/55/sports/" alt="work"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="http://lorempixel.com/g/55/55/" alt="work"></a>
+                  <a href="#" class="pic-list-link"><img src="http://lorempixel.com/55/55/sports/" alt="work"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="http://lorempixel.com/g/55/55/" alt="work"></a>
+                  <a href="#" class="pic-list-link"><img src="http://lorempixel.com/55/55/sports/" alt="work"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="http://lorempixel.com/g/55/55/" alt="work"></a>
+                  <a href="#" class="pic-list-link"><img src="http://lorempixel.com/55/55/sports/" alt="work"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="http://lorempixel.com/g/55/55/" alt="work"></a>
+                  <a href="#" class="pic-list-link"><img src="http://lorempixel.com/55/55/sports/" alt="work"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="http://lorempixel.com/g/55/55/" alt="work"></a>
+                  <a href="#" class="pic-list-link"><img src="http://lorempixel.com/55/55/sports/" alt="work"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="http://lorempixel.com/g/55/55/" alt="work"></a>
+                  <a href="#" class="pic-list-link"><img src="http://lorempixel.com/55/55/sports/" alt="work"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="http://lorempixel.com/g/55/55/" alt="work"></a>
+                  <a href="#" class="pic-list-link"><img src="http://lorempixel.com/55/55/sports/" alt="work"></a>
                 </li>
               </ul>
-            </div>
+
           </div>
         </div>
 
       </div>
     </section>
 
-    <section class="bottom">
+    <section class="footer-bottom">
       <div class="container clearfix">
 
-        <div class="copyright">
-          <div>Copyright 2012-2015 Tassive Theme by <a href="#">ThemeBucket</a> | All Right Reserved</div>
+        <div class="col-6">
+          <div class="copyright-light">Copyright 2012-2015 Tassive Theme by <a href="#">ThemeBucket</a> | All Right Reserved</div>
         </div>
-        <div class="social-media">
-          <ul class="clearfix">
-            <li><a href="#"><i class="icon-facebook"></i></a></li>
-            <li><a href="#"><i class="icon-twitter"></i></a></li>
-            <li><a href="#"><i class="icon-dribbble"></i></a></li>
-            <li><a href="#"><i class="icon-gplus"></i></a></li>
-            <li><a href="#"><i class="icon-behance"></i></a></li>
+        <div class="col-6">
+          <ul class="clearfix social-media l-fr">
+            <li><a href="#" class="social-media-icon light"><i class="icon-facebook"></i></a></li>
+            <li><a href="#" class="social-media-icon light"><i class="icon-twitter"></i></a></li>
+            <li><a href="#" class="social-media-icon light"><i class="icon-dribbble"></i></a></li>
+            <li><a href="#" class="social-media-icon light"><i class="icon-gplus"></i></a></li>
+            <li><a href="#" class="social-media-icon light"><i class="icon-behance"></i></a></li>
           </ul>
         </div>
 

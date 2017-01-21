@@ -1,0 +1,45 @@
+@import "basic.less";
+
+.contact-form{
+  display: inline-block;
+  margin-top: 50px;
+  label{
+    display: inline-block;
+    margin-bottom: 5px;
+    color: @gray;
+    text-transform: uppercase;
+
+  }
+
+  textarea,
+  input{
+    padding: 6px 12px;
+    width: 100%;
+    border: 1px solid @light;
+  }
+  textarea{
+    height: 95px;
+  }
+
+  .col-6,.col-12{
+    padding-left: 0;
+    padding-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.footer-contact{
+  padding: 40px;
+  background-color: #222;
+  text-align: center;
+  .social-media {
+    display: inline-block;
+    margin: 50px 0;
+  }
+  .copyright-light {
+    padding-top: 40px;
+    border-top: 1px dashed @darkgray;
+    color: @gray;
+    text-transform: uppercase;
+  }
+}
