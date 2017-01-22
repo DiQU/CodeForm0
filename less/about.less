@@ -3,15 +3,17 @@
 #about-banner {
   background-image: url("https://dummyimage.com/1920x1080/333/444");
 }
-
 #service-banner {
   background-image: url("https://dummyimage.com/1920x1080/eee/ddd");
 }
-
+#client-banner {
+  background-image: url("https://dummyimage.com/1920x1080/777/555");
+}
 #feature {
   background-image: url("https://dummyimage.com/1920x1080/333/444");
   padding: 100px 0;
 }
+
 .banner-title {
   float: left;
   margin: 0;
@@ -19,8 +21,8 @@
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 2px;
-  font-size: 2em;
-  line-height: 2em;
+  font-size: 20px;
+  line-height: 43px;
 }
 .banner-title-dark {
   &:extend(.banner-title);
@@ -120,29 +122,17 @@
 }
 
 /////////////////////// team members ///////////////////////
-
 .member {
-  .post-title{
-    margin-top: 1em;
-  }
-  .social-media {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .social-media-icon {
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
-    margin: 0;
-    &:hover{
-      .colorSet(@branding-color,none,transparent);
-    }
-  }
-  .info-group {
-    text-align: left;
-  }
+  // .post-title{
+  //   margin-top: 1em;
+  // }
+  // .social-media {
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
+
 }
 
 .count {

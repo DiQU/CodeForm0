@@ -1,45 +1,150 @@
 @import "basic.less";
 
-.contact-form{
+/*------------------------------------------
+contact page
+-------------------------------------------*/
+.contact-form {
   display: inline-block;
   margin-top: 50px;
-  label{
+
+  label {
     display: inline-block;
     margin-bottom: 5px;
     color: @gray;
     text-transform: uppercase;
-
   }
 
-  textarea,
-  input{
+  input,
+  textarea {
     padding: 6px 12px;
     width: 100%;
-    border: 1px solid @light;
+    border: 1px solid #ddd;
   }
-  textarea{
+
+  textarea {
     height: 95px;
   }
 
-  .col-6,.col-12{
+  .col-12,
+  .col-6 {
     padding-left: 0;
     padding-right: 15px;
     margin-bottom: 15px;
   }
 }
 
-.footer-contact{
+.footer-contact {
   padding: 40px;
   background-color: #222;
   text-align: center;
+
   .social-media {
     display: inline-block;
     margin: 50px 0;
   }
+
   .copyright-light {
     padding-top: 40px;
     border-top: 1px dashed @darkgray;
     color: @gray;
     text-transform: uppercase;
+  }
+}
+
+/*------------------------------------------
+career page
+-------------------------------------------*/
+
+.bg-light-small {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+.career-form {
+  &:extend(.contact-form all);
+
+  .col-12,
+  .col-6 {
+    padding: 0 30px;
+    margin-bottom: 45px;
+  }
+
+  .col-12 {
+    text-align: center;
+  }
+
+  label {
+    color: @dark;
+    text-transform: capitalize;
+  }
+
+  .button-white {
+    .colorSet(#fff, #fff, @branding-color); // @c, @bdc, @bkc
+
+    &:hover {
+      .colorSet(#fff, #fff, #000);
+    }
+  }
+}
+
+/*------------------------------------------
+our team member page
+-------------------------------------------*/
+
+.team-desc{
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 60%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  color: @gray;
+}
+
+/*------------------------------------------
+our clinets page
+-------------------------------------------*/
+
+.member-logos{
+  padding: 0 30px;
+  >.col-4{
+    padding: 10px;
+  }
+}
+
+#moving-item{
+  padding: 100px 0;
+  background-image: url("https://dummyimage.com/1920x1080/777/777");
+  .feature-item-icon{
+    font-size: 60px;
+  }
+  .feature-item-desc {
+    color: #fff;
+  }
+  .thumbnail-info {
+    > h4,
+    > span {
+    color: #fff;
+  }
+  }
+}
+
+.be-our-clients{
+  padding: 60px;
+  background-color: #eee;
+  text-align: center;
+  > h3 {
+    color: @branding-color;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-transform: uppercase;
+  }
+  > p{
+    color: @gray;
+    line-height: 2;
+  }
+  .button-black {
+    margin-top: 15px;
   }
 }
