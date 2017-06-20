@@ -1,10 +1,19 @@
 @import "basic.less";
 
-.header-ontop {
-  position: fixed;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  // background-color: transparent;
+header{
+  transition: 0.5s;
+  &.top{
+    position: absolute;
+    background: transparent;
+    width: 100%;
+  }
+  &.fixed {
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    height:100px;
+  }
 }
 
 .special-service{
